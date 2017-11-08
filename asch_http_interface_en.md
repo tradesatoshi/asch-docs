@@ -105,7 +105,7 @@ var publicKey = AschJS.crypto.getKeys(secret).publicKey;  //Generate public key 
 // var address = AschJS.crypto.getAddress(publicKey);   //Generate address according to public key
 
 // Submit the above data to Asch server through post method   
-curl -X POST -H "Content-Type: application/json" -k -d '{"publicKey":"bd1e78c5a10fbf1eca36b28bbb8ea85f320967659cbf1f7ff1603d0a368867b9"}' http://http://91.121.171.228:4000/api/accounts/open2/   
+curl -X POST -H "Content-Type: application/json" -k -d '{"publicKey":"bd1e78c5a10fbf1eca36b28bbb8ea85f320967659cbf1f7ff1603d0a368867b9"}' http://91.121.171.228:4000/api/accounts/open2/   
 ```   
    
 JSON Response Example:   
@@ -152,7 +152,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -X POST -H "Content-Type: application/json" -k -d '{"secret":"fault still attack alley expand music basket purse later educate follow ride"}' http://http://91.121.171.228:4000/api/accounts/open/   
+curl -X POST -H "Content-Type: application/json" -k -d '{"secret":"fault still attack alley expand music basket purse later educate follow ride"}' http://91.121.171.228:4000/api/accounts/open/   
 ```   
    
 JSON Response Example:   
@@ -193,7 +193,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET http://http://91.121.171.228:4000/api/accounts?address=16723473400748954103   
+curl -k -X GET http://91.121.171.228:4000/api/accounts?address=16723473400748954103   
 ```   
    
 JSON Response Example:   
@@ -243,7 +243,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/accounts/getBalance?address=14636456069025293113'   
+curl -k -X GET 'http://91.121.171.228:4000/api/accounts/getBalance?address=14636456069025293113'   
 ```   
    
 JSON Response Example:   
@@ -274,7 +274,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/accounts/getPublickey?address=14636456069025293113'   
+curl -k -X GET 'http://91.121.171.228:4000/api/accounts/getPublickey?address=14636456069025293113'   
 ```   
    
 JSON Response Example:   
@@ -304,7 +304,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -H "Content-Type: application/json" -X POST -d '{"secret":"fault still attack alley expand music basket purse later educate follow ride"}' 'http://http://91.121.171.228:4000/api/accounts/generatePublickey'   
+curl -k -H "Content-Type: application/json" -X POST -d '{"secret":"fault still attack alley expand music basket purse later educate follow ride"}' 'http://91.121.171.228:4000/api/accounts/generatePublickey'   
 ```   
    
 JSON Response Example:   
@@ -335,7 +335,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/accounts/delegates?address=14636456069025293113'   
+curl -k -X GET 'http://91.121.171.228:4000/api/accounts/delegates?address=14636456069025293113'   
 ```   
    
 JSON Response Example:   
@@ -394,7 +394,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/accounts/delegates/fee  
+curl -k -X GET 'http://91.121.171.228:4000/api/accounts/delegates/fee  
 ```   
    
 JSON Response Example:   
@@ -429,7 +429,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -H "Content-Type: application/json" -X PUT -d '{"secret":"call scissors pupil water friend timber spend brand vote obey corn size","publicKey":"3ec1c9ec08c0512641deba37c0e95a0fe5fc3bdf58424009f594d7d6a4e28a2a","delegates":["+fafcd01f6b813fdeb3c086e60bc7fa9bfc8ef70ae7be47ce0ac5d06e7b1a8575"]}' 'http://http://91.121.171.228:4000/api/accounts/delegates'     
+curl -k -H "Content-Type: application/json" -X PUT -d '{"secret":"call scissors pupil water friend timber spend brand vote obey corn size","publicKey":"3ec1c9ec08c0512641deba37c0e95a0fe5fc3bdf58424009f594d7d6a4e28a2a","delegates":["+fafcd01f6b813fdeb3c086e60bc7fa9bfc8ef70ae7be47ce0ac5d06e7b1a8575"]}' 'http://91.121.171.228:4000/api/accounts/delegates'     
 ```   
    
 JSON Response Example:   
@@ -489,7 +489,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/transactions?recipientId=16723473400748954103&orderBy=t_timestamp:desc&limit=3'   
+curl -k -X GET 'http://91.121.171.228:4000/api/transactions?recipientId=16723473400748954103&orderBy=t_timestamp:desc&limit=3'   
 ```   
    
 JSON Response Example:   
@@ -576,7 +576,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/transactions/get?id=14093929199102906687'   
+curl -k -X GET 'http://91.121.171.228:4000/api/transactions/get?id=14093929199102906687'   
 ```   
    
 JSON Response Example:   
@@ -624,7 +624,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET http://http://91.121.171.228:4000/api/transactions/unconfirmed/get?id=7557072430673853692  //Regularly, this unconfirmed transaction exist during an extremely short time, almost 0~10 second. 
+curl -k -X GET http://91.121.171.228:4000/api/transactions/unconfirmed/get?id=7557072430673853692  //Regularly, this unconfirmed transaction exist during an extremely short time, almost 0~10 second. 
 ```   
    
 JSON Response Example:   
@@ -673,7 +673,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/transactions/unconfirmed'   
+curl -k -X GET 'http://91.121.171.228:4000/api/transactions/unconfirmed'   
 ```   
    
 JSON Response Example:   
@@ -710,7 +710,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -H "Content-Type: application/json" -X PUT -d '{"secret":"unaware label emerge fancy concert long fiction report affair appear decide twenty","amount":1000000,"recipientId":"16723473400748954103"}' 'http://http://91.121.171.228:4000/api/transactions'    
+curl -k -H "Content-Type: application/json" -X PUT -d '{"secret":"unaware label emerge fancy concert long fiction report affair appear decide twenty","amount":1000000,"recipientId":"16723473400748954103"}' 'http://91.121.171.228:4000/api/transactions'    
 ```   
    
 JSON Response Example:   
@@ -744,7 +744,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/blocks/get?id=6076474715648888747'   
+curl -k -X GET 'http://91.121.171.228:4000/api/blocks/get?id=6076474715648888747'   
 ```   
    
 JSON Response Example:   
@@ -802,7 +802,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/blocks?limit=2&offset=0&orderBy=height:desc'   
+curl -k -X GET 'http://91.121.171.228:4000/api/blocks?limit=2&offset=0&orderBy=height:desc'   
 ```   
    
 JSON Response Example:   
@@ -864,7 +864,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/blocks/getheight'    
+curl -k -X GET 'http://91.121.171.228:4000/api/blocks/getheight'    
 ```   
    
 JSON Response Example:   
@@ -888,7 +888,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/blocks/getfee'   
+curl -k -X GET 'http://91.121.171.228:4000/api/blocks/getfee'   
 ```   
    
 JSON Response Example:   
@@ -912,7 +912,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/blocks/getMilestone'    
+curl -k -X GET 'http://91.121.171.228:4000/api/blocks/getMilestone'    
 ```   
    
 JSON Response Example:   
@@ -936,7 +936,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/blocks/getReward'   
+curl -k -X GET 'http://91.121.171.228:4000/api/blocks/getReward'   
 ```   
    
 JSON Response Example:   
@@ -960,7 +960,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/blocks/getSupply'   
+curl -k -X GET 'http://91.121.171.228:4000/api/blocks/getSupply'   
 ```   
    
 JSON Response Example:   
@@ -988,7 +988,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/blocks/getStatus'   
+curl -k -X GET 'http://91.121.171.228:4000/api/blocks/getStatus'   
 ```   
    
 JSON Response Example:   
@@ -1022,7 +1022,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/delegates/count'   
+curl -k -X GET 'http://91.121.171.228:4000/api/delegates/count'   
 ```   
    
 JSON Response Example:   
@@ -1049,7 +1049,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/delegates/voters?publicKey=ae256559d06409435c04bd62628b3e7ea3894c43298556f52b1cfb01fb3e3dc7'   
+curl -k -X GET 'http://91.121.171.228:4000/api/delegates/voters?publicKey=ae256559d06409435c04bd62628b3e7ea3894c43298556f52b1cfb01fb3e3dc7'   
 ```   
    
 JSON Response Example:   
@@ -1100,8 +1100,8 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET http://http://91.121.171.228:4000/api/delegates/get?publicKey=bd1e78c5a10fbf1eca36b28bbb8ea85f320967659cbf1f7ff1603d0a368867b9   
-curl -k -X GET http://http://91.121.171.228:4000/api/delegates/get?username=delegate_register   
+curl -k -X GET http://91.121.171.228:4000/api/delegates/get?publicKey=bd1e78c5a10fbf1eca36b28bbb8ea85f320967659cbf1f7ff1603d0a368867b9   
+curl -k -X GET http://91.121.171.228:4000/api/delegates/get?username=delegate_register   
 ```   
    
 JSON Response Example:   
@@ -1151,7 +1151,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/delegates?orderby=approval:desc&limit=2' //the first two delegates order by approval vote, descendingly  
+curl -k -X GET 'http://91.121.171.228:4000/api/delegates?orderby=approval:desc&limit=2' //the first two delegates order by approval vote, descendingly  
 ```   
    
 JSON Response Example:   
@@ -1215,7 +1215,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/delegates/fee?publicKey=ae256559d06409435c04bd62628b3e7ea3894c43298556f52b1cfb01fb3e3dc7'   
+curl -k -X GET 'http://91.121.171.228:4000/api/delegates/fee?publicKey=ae256559d06409435c04bd62628b3e7ea3894c43298556f52b1cfb01fb3e3dc7'   
 ```   
    
 JSON Response Example:   
@@ -1245,7 +1245,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/delegates/forging/getForgedByAccount?generatorPublicKey=ae256559d06409435c04bd62628b3e7ea3894c43298556f52b1cfb01fb3e3dc7'   
+curl -k -X GET 'http://91.121.171.228:4000/api/delegates/forging/getForgedByAccount?generatorPublicKey=ae256559d06409435c04bd62628b3e7ea3894c43298556f52b1cfb01fb3e3dc7'   
 ```   
    
 JSON Response Example:   
@@ -1281,7 +1281,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -H "Content-Type: application/json" -X PUT -d '{"secret":"unaware label emerge fancy concert long fiction report affair appear decide twenty","username":"delegate_0821"}' 'http://http://91.121.171.228:4000/api/delegates'   
+curl -k -H "Content-Type: application/json" -X PUT -d '{"secret":"unaware label emerge fancy concert long fiction report affair appear decide twenty","username":"delegate_0821"}' 'http://91.121.171.228:4000/api/delegates'   
 ```   
    
 JSON Response Example:   
@@ -1339,7 +1339,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/peers?limit=1'   
+curl -k -X GET 'http://91.121.171.228:4000/api/peers?limit=1'   
 ```   
    
 JSON Response Example:   
@@ -1375,7 +1375,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET http://http://91.121.171.228:4000/api/peers/version   
+curl -k -X GET http://91.121.171.228:4000/api/peers/version   
 ```   
    
 JSON Response Example:   
@@ -1410,7 +1410,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET 'http://http://91.121.171.228:4000/api/peers/get?ip=45.32.248.33&port=4096'   
+curl -k -X GET 'http://91.121.171.228:4000/api/peers/get?ip=45.32.248.33&port=4096'   
 ```   
    
 JSON Response Example:   
@@ -1439,7 +1439,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k http://http://91.121.171.228:4000/api/loader/status -X GET   
+curl -k http://91.121.171.228:4000/api/loader/status -X GET   
 ```   
    
 JSON Response Example:   
@@ -1466,7 +1466,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k http://http://91.121.171.228:4000/api/loader/status/sync -X GET   
+curl -k http://91.121.171.228:4000/api/loader/status/sync -X GET   
 ```   
    
 JSON Response Example:   
@@ -1504,7 +1504,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -H "Content-Type: application/json" -X PUT -d '{"secret":"unaware label emerge fancy concert long fiction report affair appear decide twenty","secondSecret":"fault still attack alley expand music basket purse later educate follow ride"}' 'http://http://91.121.171.228:4000/api/signatures'    
+curl -k -H "Content-Type: application/json" -X PUT -d '{"secret":"unaware label emerge fancy concert long fiction report affair appear decide twenty","secondSecret":"fault still attack alley expand music basket purse later educate follow ride"}' 'http://91.121.171.228:4000/api/signatures'    
 ```   
    
 JSON Response Example:   
@@ -1548,7 +1548,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k http://http://91.121.171.228:4000/api/signatures/fee -X GET   
+curl -k http://91.121.171.228:4000/api/signatures/fee -X GET   
 ```   
    
 JSON Response Example:   
@@ -1587,7 +1587,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -H "Content-Type: application/json" -X PUT -d '{"secret":"vanish deliver message evil canyon night extend unusual tell prosper issue antenna","min":2,"lifetime":1,"keysgroup":["+eb48b9ab7c9a34a9b7cdf860265d65b31af774355cabf1b3a387d14a1925dc97","+d5d7aa157f866c47a2a1e09e2746286ed089fd90976b54fbfa930e87d11609cb"]}' 'http://http://91.121.171.228:4000/api/multisignatures'  //公钥为2cef5711e61bb5361c544077aa08aebc4d962a1d656571901c48d716382ad4fd   
+curl -k -H "Content-Type: application/json" -X PUT -d '{"secret":"vanish deliver message evil canyon night extend unusual tell prosper issue antenna","min":2,"lifetime":1,"keysgroup":["+eb48b9ab7c9a34a9b7cdf860265d65b31af774355cabf1b3a387d14a1925dc97","+d5d7aa157f866c47a2a1e09e2746286ed089fd90976b54fbfa930e87d11609cb"]}' 'http://91.121.171.228:4000/api/multisignatures'  //公钥为2cef5711e61bb5361c544077aa08aebc4d962a1d656571901c48d716382ad4fd   
 ```   
    
 JSON Response Example:   
@@ -1619,7 +1619,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET http://http://91.121.171.228:4000/api/multisignatures/pending?publicKey=2cef5711e61bb5361c544077aa08aebc4d962a1d656571901c48d716382ad4fd   
+curl -k -X GET http://91.121.171.228:4000/api/multisignatures/pending?publicKey=2cef5711e61bb5361c544077aa08aebc4d962a1d656571901c48d716382ad4fd   
 ```   
    
 JSON Response Example:   
@@ -1679,7 +1679,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -H "Content-Type: application/json" -X POST -d '{"secret":"lemon carpet desk accuse clerk future oyster essay seminar force live dog","transactionId":"17620378998277022323"}' 'http://http://91.121.171.228:4000/api/multisignatures/sign'   //signed by a user whose public key is eb48b9ab7c9a34a9b7cdf860265d65b31af774355cabf1b3a387d14a1925dc97   
+curl -k -H "Content-Type: application/json" -X POST -d '{"secret":"lemon carpet desk accuse clerk future oyster essay seminar force live dog","transactionId":"17620378998277022323"}' 'http://91.121.171.228:4000/api/multisignatures/sign'   //signed by a user whose public key is eb48b9ab7c9a34a9b7cdf860265d65b31af774355cabf1b3a387d14a1925dc97   
 ```   
    
 JSON Response Example:   
@@ -1689,7 +1689,7 @@ JSON Response Example:
 	"transactionId": "17620378998277022323"   
 }   
 // Now get the pending transaction again   
-curl -k -X GET http://http://91.121.171.228:4000/api/multisignatures/pending?publicKey=2cef5711e61bb5361c544077aa08aebc4d962a1d656571901c48d716382ad4fd   
+curl -k -X GET http://91.121.171.228:4000/api/multisignatures/pending?publicKey=2cef5711e61bb5361c544077aa08aebc4d962a1d656571901c48d716382ad4fd   
 {   
 	"success": true,   
 	"transactions": [{   
@@ -1721,13 +1721,13 @@ curl -k -X GET http://http://91.121.171.228:4000/api/multisignatures/pending?pub
 }   
    
 // a user whose public key is "d5d7aa157f866c47a2a1e09e2746286ed089fd90976b54fbfa930e87d11609cb" sign this registering transaction   
-curl -k -H "Content-Type: application/json" -X POST -d '{"secret":"chalk among elbow piece badge try van round quality position simple teach","transactionId":"17620378998277022323"}' 'http://http://91.121.171.228:4000/api/multisignatures/sign'   
+curl -k -H "Content-Type: application/json" -X POST -d '{"secret":"chalk among elbow piece badge try van round quality position simple teach","transactionId":"17620378998277022323"}' 'http://91.121.171.228:4000/api/multisignatures/sign'   
 {"success":true,"transactionId":"17620378998277022323"}   
 // trying to get pending transaction again, but this time there isn't any of it.   
-curl -k -X GET http://http://91.121.171.228:4000/api/multisignatures/pending?publicKey=2cef5711e61bb5361c544077aa08aebc4d962a1d656571901c48d716382ad4fd   
+curl -k -X GET http://91.121.171.228:4000/api/multisignatures/pending?publicKey=2cef5711e61bb5361c544077aa08aebc4d962a1d656571901c48d716382ad4fd   
 {"success":true,"transactions":[]}   
 // Check the detail of this transaction. (at this time, this transaction has been broadcasted to the whole network and been written to the blockchain) Now the account has already registered as a multi-signature account. 
-curl -k -X GET http://http://91.121.171.228:4000/api/transactions/get?id=17620378998277022323   
+curl -k -X GET http://91.121.171.228:4000/api/transactions/get?id=17620378998277022323   
 {   
 	"success": true,   
 	"transaction": {   
@@ -1774,7 +1774,7 @@ Response Parameter Description:
    
 Request Example:   
 ```bash   
-curl -k -X GET http://http://91.121.171.228:4000/api/multisignatures/accounts?publicKey=eb48b9ab7c9a34a9b7cdf860265d65b31af774355cabf1b3a387d14a1925dc97   
+curl -k -X GET http://91.121.171.228:4000/api/multisignatures/accounts?publicKey=eb48b9ab7c9a34a9b7cdf860265d65b31af774355cabf1b3a387d14a1925dc97   
 ```   
    
 JSON Response Example:   
@@ -1841,7 +1841,7 @@ console.log(JSON.stringify(transaction))
 {"type":1,"amount":0,"fee":500000000,"recipientId":null,"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","timestamp":5328943,"asset":{"signature":{"publicKey":"27116db89cb5a8c02fb559712e0eabdc298480d3c79a089b803e35bc5ef7bb7b"}},"signature":"71ef98b1600f22f3b18cfcf17599db3c40727c230db817f610e86454b62df4fb830211737ff0c03c6a61ecfd4a9fcb68a30b2874060bb33b87766acf800e820a","id":"15605591820551652547"}   
 
 // submit above data of setting second password to Asch server by POST method
-curl -H "Content-Type: application/json" -H "magic:594fe0f3" -H "version:''" -k -X POST -d '{"transaction":{"type":1,"amount":0,"fee":500000000,"recipientId":null,"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","timestamp":5328943,"asset":{"signature":{"publicKey":"27116db89cb5a8c02fb559712e0eabdc298480d3c79a089b803e35bc5ef7bb7b"}},"signature":"71ef98b1600f22f3b18cfcf17599db3c40727c230db817f610e86454b62df4fb830211737ff0c03c6a61ecfd4a9fcb68a30b2874060bb33b87766acf800e820a","id":"15605591820551652547"}}' http://http://91.121.171.228:4000/peer/transactions   
+curl -H "Content-Type: application/json" -H "magic:594fe0f3" -H "version:''" -k -X POST -d '{"transaction":{"type":1,"amount":0,"fee":500000000,"recipientId":null,"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","timestamp":5328943,"asset":{"signature":{"publicKey":"27116db89cb5a8c02fb559712e0eabdc298480d3c79a089b803e35bc5ef7bb7b"}},"signature":"71ef98b1600f22f3b18cfcf17599db3c40727c230db817f610e86454b62df4fb830211737ff0c03c6a61ecfd4a9fcb68a30b2874060bb33b87766acf800e820a","id":"15605591820551652547"}}' http://91.121.171.228:4000/peer/transactions   
 ```   
    
 JSON Response Example:   
@@ -1881,7 +1881,7 @@ JSON.stringify(transaction)
 '{"type":0,"amount":10000000000,"fee":10000000,"recipientId":"16358246403719868041","timestamp":5333378,"asset":{},"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","signature":"2d47810b7d9964c5c4d330a53d1382769e5092b3a53639853f702cf4a382aafcff8ef8663c0f6856a23f41c249944f0c3cfac0744847268853a62af5dd8fc90a","signSignature":"dfa9b807fff362d581170b41c56a2b8bd723c48d1f100f2856d794408723e8973016d75aeff4705e6837dcdb745aafb41aa10a9f1ff8a77d128ba3d712e90907","id":"16348623380114619131"}'
 
 // submit above data of transfer to Asch server by POST method
-curl -H "Content-Type: application/json" -H "magic:594fe0f3" -H "version:''" -k -X POST -d '{"transaction":{"type":0,"amount":10000000000,"fee":10000000,"recipientId":"16358246403719868041","timestamp":5333378,"asset":{},"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","signature":"2d47810b7d9964c5c4d330a53d1382769e5092b3a53639853f702cf4a382aafcff8ef8663c0f6856a23f41c249944f0c3cfac0744847268853a62af5dd8fc90a","signSignature":"dfa9b807fff362d581170b41c56a2b8bd723c48d1f100f2856d794408723e8973016d75aeff4705e6837dcdb745aafb41aa10a9f1ff8a77d128ba3d712e90907","id":"16348623380114619131"}}' http://http://91.121.171.228:4000/peer/transactions
+curl -H "Content-Type: application/json" -H "magic:594fe0f3" -H "version:''" -k -X POST -d '{"transaction":{"type":0,"amount":10000000000,"fee":10000000,"recipientId":"16358246403719868041","timestamp":5333378,"asset":{},"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","signature":"2d47810b7d9964c5c4d330a53d1382769e5092b3a53639853f702cf4a382aafcff8ef8663c0f6856a23f41c249944f0c3cfac0744847268853a62af5dd8fc90a","signSignature":"dfa9b807fff362d581170b41c56a2b8bd723c48d1f100f2856d794408723e8973016d75aeff4705e6837dcdb745aafb41aa10a9f1ff8a77d128ba3d712e90907","id":"16348623380114619131"}}' http://91.121.171.228:4000/peer/transactions
 ```   
    
 JSON Response Example:   
@@ -1917,7 +1917,7 @@ JSON.stringify(transaction)
 '{"type":2,"amount":0,"fee":10000000000,"recipientId":null,"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","timestamp":5334485,"asset":{"delegate":{"username":"zhenxi_test","publicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f"}},"signature":"a12ce415d2d21ab46e4c1b918b8717b1d351dd99abd6f2f94d9a1a7e1f32b697f843a05b1851cb857ea45a2476dce592f5ddd612c00cd44488b8b610c57d7f0a","signSignature":"35adc9f1f37d14458e8588f9b4332eedf1151c02480159f64a287a4b0cbb59bfe82040dfec96a4d9560bae99b8eaa1799a7023395db5ddc640d95447992d6e00","id":"12310465407307249905"}'
 
 // submit above data of registering delegate to Asch server by POST method
-curl -H "Content-Type: application/json" -H "magic:594fe0f3" -H "version:''" -k -X POST -d '{"transaction":{"type":2,"amount":0,"fee":10000000000,"recipientId":null,"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","timestamp":5334485,"asset":{"delegate":{"username":"zhenxi_test","publicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f"}},"signature":"a12ce415d2d21ab46e4c1b918b8717b1d351dd99abd6f2f94d9a1a7e1f32b697f843a05b1851cb857ea45a2476dce592f5ddd612c00cd44488b8b610c57d7f0a","signSignature":"35adc9f1f37d14458e8588f9b4332eedf1151c02480159f64a287a4b0cbb59bfe82040dfec96a4d9560bae99b8eaa1799a7023395db5ddc640d95447992d6e00","id":"12310465407307249905"}}' http://http://91.121.171.228:4000/peer/transactions
+curl -H "Content-Type: application/json" -H "magic:594fe0f3" -H "version:''" -k -X POST -d '{"transaction":{"type":2,"amount":0,"fee":10000000000,"recipientId":null,"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","timestamp":5334485,"asset":{"delegate":{"username":"zhenxi_test","publicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f"}},"signature":"a12ce415d2d21ab46e4c1b918b8717b1d351dd99abd6f2f94d9a1a7e1f32b697f843a05b1851cb857ea45a2476dce592f5ddd612c00cd44488b8b610c57d7f0a","signSignature":"35adc9f1f37d14458e8588f9b4332eedf1151c02480159f64a287a4b0cbb59bfe82040dfec96a4d9560bae99b8eaa1799a7023395db5ddc640d95447992d6e00","id":"12310465407307249905"}}' http://91.121.171.228:4000/peer/transactions
 ```   
    
 JSON Response Example:   
@@ -1958,7 +1958,7 @@ JSON.stringify(transaction)
 {"type":3,"amount":0,"fee":10000000,"recipientId":null,"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","timestamp":5334923,"asset":{"vote":{"votes":["-ae256559d06409435c04bd62628b3e7ea3894c43298556f52b1cfb01fb3e3dc7","+c292db6ea14d518bc29e37cb227ff260be21e2e164ca575028835a1f499e4fe2"]}},"signature":"6036c2066a231c452a1c83aafd3bb9db3842ee05d5f17813f8264a4294cdec761faa89edf4a95f9b2e2451285807ab18aa9f989ad9a3165b95643179b8e4580f","signSignature":"a216ca739112e6f65986604b9467ccc8058138a7077faf134d6c4d673306cd1c514cc95bd54a036f7c602a56c4b4f2e4e59f6aa7c376cb1429e89054042e050b","id":"17558357483072606427"}
 
 // submit above data of vote/cancel vote to Asch server by POST method
-curl -H "Content-Type: application/json" -H "magic:594fe0f3" -H "version:''" -k -X POST -d '{"transaction":{"type":3,"amount":0,"fee":10000000,"recipientId":null,"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","timestamp":5334923,"asset":{"vote":{"votes":["-ae256559d06409435c04bd62628b3e7ea3894c43298556f52b1cfb01fb3e3dc7","+c292db6ea14d518bc29e37cb227ff260be21e2e164ca575028835a1f499e4fe2"]}},"signature":"6036c2066a231c452a1c83aafd3bb9db3842ee05d5f17813f8264a4294cdec761faa89edf4a95f9b2e2451285807ab18aa9f989ad9a3165b95643179b8e4580f","signSignature":"a216ca739112e6f65986604b9467ccc8058138a7077faf134d6c4d673306cd1c514cc95bd54a036f7c602a56c4b4f2e4e59f6aa7c376cb1429e89054042e050b","id":"17558357483072606427"}}' http://http://91.121.171.228:4000/peer/transactions
+curl -H "Content-Type: application/json" -H "magic:594fe0f3" -H "version:''" -k -X POST -d '{"transaction":{"type":3,"amount":0,"fee":10000000,"recipientId":null,"senderPublicKey":"3e6e7c90571b9f7dabc0abc2e499c2fcee8e436af3a9d5c8eadd82ac7aeae85f","timestamp":5334923,"asset":{"vote":{"votes":["-ae256559d06409435c04bd62628b3e7ea3894c43298556f52b1cfb01fb3e3dc7","+c292db6ea14d518bc29e37cb227ff260be21e2e164ca575028835a1f499e4fe2"]}},"signature":"6036c2066a231c452a1c83aafd3bb9db3842ee05d5f17813f8264a4294cdec761faa89edf4a95f9b2e2451285807ab18aa9f989ad9a3165b95643179b8e4580f","signSignature":"a216ca739112e6f65986604b9467ccc8058138a7077faf134d6c4d673306cd1c514cc95bd54a036f7c602a56c4b4f2e4e59f6aa7c376cb1429e89054042e050b","id":"17558357483072606427"}}' http://91.121.171.228:4000/peer/transactions
 ```   
    
 JSON Response Example:   
